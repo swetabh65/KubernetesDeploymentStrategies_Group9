@@ -1,0 +1,25 @@
+# rolling-update.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: codetonic-deployment
+spec:
+  replicas: 3
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  selector:
+    matchLabels:
+      app: codetonic
+  template:
+    metadata:
+      labels:
+        app: codetonic
+    spec:
+      containers:
+      - name: codetonic
+        image: yourdockerhubuser/codetonic:v2
+        ports:
+        - containerPort: 80
