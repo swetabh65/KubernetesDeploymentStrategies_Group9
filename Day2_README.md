@@ -78,6 +78,8 @@ minikube service codetonic-service
 
 http://127.0.0.1:51199/
 
+Welcome to CodeTonic Dashboard v1
+
 <img width="1100" height="583" alt="image" src="https://github.com/user-attachments/assets/2b72fdad-88b2-499f-bf4b-b55a2af7ebb6" />
 
 
