@@ -1,0 +1,22 @@
+# canary-stable.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: codetonic-stable
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: codetonic
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: codetonic
+        version: v1
+    spec:
+      containers:
+      - name: codetonic
+        image: yourdockerhubuser/codetonic:v1
+        ports:
+        - containerPort: 80
