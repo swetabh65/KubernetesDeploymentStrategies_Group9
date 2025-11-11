@@ -1,0 +1,12 @@
+# canary-service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: codetonic-service
+spec:
+  selector:
+    app: codetonic
+  ports:
+    - port: 80
+      targetPort: 80
+  type: NodePort
