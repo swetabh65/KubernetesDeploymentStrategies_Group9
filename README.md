@@ -22,3 +22,11 @@ Your feedback, suggestions, or contributions are always welcome!
 👨‍💻 Author
 
 Swetabh Sonal | Darshit Damania | Priyanshu Gupta
+
+
+
+Added my name (Priyanshu Gupta) to the author section in README.md file
+as part of Group 9 - Kubernetes Deployment Strategies project.
+
+This update ensures all group members are properly credited for their
+contribution to the project.
